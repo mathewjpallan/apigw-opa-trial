@@ -1,0 +1,7 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+GET /play/asyncapi/:delaytime                   controllers.TestController.testAsync(delaytime: String)
+GET /play/syncapi/:delaytime                   controllers.TestController.testSync(delaytime: String)
+GET /play/userapi/:msg                   controllers.TestController.userApi(msg: String)
+GET /play/adminapi/:msg                   controllers.TestController.adminApi(msg: String)
